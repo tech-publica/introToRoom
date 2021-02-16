@@ -1,8 +1,8 @@
 package com.room.ps.bookkeeper
 
 import android.app.Application
-import android.arch.lifecycle.AndroidViewModel
-import android.arch.lifecycle.LiveData
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 import android.os.AsyncTask
 
 class BookViewModel(application: Application): AndroidViewModel(application) {

@@ -3,7 +3,7 @@ package com.room.ps.bookkeeper
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.text.TextUtils
 import kotlinx.android.synthetic.main.activity_new.*
 
@@ -17,8 +17,7 @@ class NewBookActivity : AppCompatActivity() {
 
 			val resultIntent = Intent()
 
-			if (TextUtils.isEmpty(etAuthorName.text) ||
-					TextUtils.isEmpty(etBookName.text)) {
+			if (TextUtils.isEmpty(etAuthorName.text) || TextUtils.isEmpty(etBookName.text)) {
 				setResult(Activity.RESULT_CANCELED, resultIntent)
 			} else {
 				val author = etAuthorName.text.toString()
